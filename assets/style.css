@@ -16,6 +16,26 @@ html {
 body {
     min-width: 650px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0096FF; 
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0096FF; 
+}
 /* ========== GENERAL SETTING END ========== */
 
 
@@ -484,7 +504,7 @@ nav {
     height: 300px;
     margin: 20px auto;
     border: 5px solid white;
-    overflow: hidden;
+    overflow: auto;
 }
 .certificate-gallery-container legend {
     font-family: 'Poppins', cursive;
@@ -500,9 +520,6 @@ nav {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
 }
 .certificate-card {
     height: 250px;
@@ -512,22 +529,6 @@ nav {
 }
 .certificate-card img {
     height: 250px;
-}
-@keyframes imgslide {
-    0% {
-        transform: translateX(-225px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-@keyframes imgslide1 {
-    0% {
-        transform: translateX(-1790px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
 }
 @media screen and (max-width: 750px) {
     .certificate-gallery-container {
@@ -551,22 +552,6 @@ nav {
     }
     .certificate-card img {
         height: 215px;
-    }
-    @keyframes imgslide {
-        0% {
-            transform: translateX(-225px);
-        }
-        100% {
-            transform: translateX(0px);
-        }
-    }
-    @keyframes imgslide1 {
-        0% {
-            transform: translateX(-1790px);
-        }
-        100% {
-            transform: translateX(0px);
-        }
     }
 }
 
