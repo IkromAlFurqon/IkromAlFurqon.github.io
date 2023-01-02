@@ -504,7 +504,8 @@ nav {
     height: 300px;
     margin: 20px auto;
     border: 5px solid white;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .certificate-gallery-container legend {
     font-family: 'Poppins', cursive;
@@ -659,25 +660,25 @@ footer .wave {
 footer #wave1 {
     z-index: 1000;
     opacity: 1;
-    top: 300px;
+    top: 310px;
     animation: animateWave 4s linear infinite;
 }
 footer #wave2 {
     z-index: 999;
     opacity: 0.5;
-    top: 200px;
+    top: 210px;
     animation: animateWave_02 3.5s linear infinite;
 }
 footer #wave3 {
     z-index: 1000;
     opacity: 0.2;
-    top: 100px;
+    top: 110px;
     animation: animateWave 3.25s linear infinite;
 }
 footer #wave4 {
     z-index: 999;
     opacity: 0.7;
-    top: 0;
+    top: 10;
     animation: animateWave_02 3s linear infinite;
 }
 @keyframes animateWave {
