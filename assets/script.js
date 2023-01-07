@@ -1,10 +1,10 @@
 function navResponsive(x) {
     x.classList.toggle("change-bar")
     var y = document.getElementById("navResponsive");
-    if (y.style.display === "block") {
-        y.style.display = "none";
+    if (y.style.height === "300px") {
+        y.style.height = "0px";
     } else {
-        y.style.display = "block";
+        y.style.height = "300px";
     }
 }
 

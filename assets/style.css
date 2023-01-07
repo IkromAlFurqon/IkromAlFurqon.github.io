@@ -133,9 +133,14 @@ nav {
 }
 .navigation-responsive-container {
     width: 90%;
+    height: 0px;
+    position: fixed;
+    z-index: 100;
     /* background-color: aqua; */
     margin: 0 auto;
-    display: none;
+    overflow: hidden;
+    transition: 1s;
+    box-shadow: 0 10px 5px rgba(100, 100, 100, 0.25);
 }
 .navigation-responsive-container a {
     display: block;
