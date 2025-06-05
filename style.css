@@ -1,4 +1,7 @@
 /* ========== GENERAL SETTING ========== */
+html {
+    scroll-behavior: smooth;
+}  
 * {
     margin: 0;
     padding: 0;
@@ -163,6 +166,51 @@ ul {margin-left: 2.5vw;}
 .close:hover {
     color: #000;
 }
+/* Base state untuk semua fade-in */
+.fade-in-on-scroll,.fade-in-on-scroll.projects-card  {
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+  
+/* Fade-in dari bawah */
+.fade-in-up {
+    transform: translateY(30px);
+}
+
+.fade-in-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade-in dari atas */
+.fade-in-down {
+    transform: translateY(-30px);
+}
+
+.fade-in-down.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade-in dari kiri */
+.fade-in-left {
+    transform: translateX(-30px);
+}
+
+.fade-in-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Fade-in dari kanan */
+.fade-in-right {
+    transform: translateX(30px);
+}
+
+.fade-in-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
   
 
 
@@ -217,6 +265,7 @@ ul {margin-left: 2.5vw;}
     transition: 0.2s;
 }
 .navbar-button:hover {color: #3B82F6;}
+.navbar-button.active {color: #3B82F6;}
 
 /* ========== WELCOME SECTION ========== */
 .welcome-section-container {
@@ -508,4 +557,8 @@ ul {margin-left: 2.5vw;}
     color: #555;
     font-size: 0.95rem;
     line-height: 1.4;
+}
+footer {
+    padding: 2.5vw;
+    text-align: center;
 }
