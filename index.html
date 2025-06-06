@@ -18,6 +18,7 @@
   <nav class="navbar-container">
     <div class="navbar fade-down" style="--delay: 0s">
       <a href="#home-section" class="navbar-logo-container fade-down" style="--delay: 0.2s">Ikrom's Projects</a>
+      <div class="navbar-toggle" onclick="toggleNavbar()">☰</div>
       <div class="navbar-button-container fade-down" style="--delay: 0.4s">
         <a href="#home-section" class="navbar-button fade-down" style="--delay: 0.6s">Welcome</a>
         <a href="#about-me-section" class="navbar-button fade-down" style="--delay: 0.8s">Meet Me</a>
@@ -41,7 +42,7 @@
         and a deep curiosity to always do better.
       </p>
       <div class="custom-button-container fade-left" style="--delay: 2s;">
-        <a href="#projects" class="custom-button">See My Work</a>
+        <a href="#projects-section" class="custom-button">See My Work</a>
         <a href="#contact" class="custom-button-outline">Contact Me</a>
       </div>
     </div>
@@ -83,14 +84,14 @@
           <span style="color: #3B82F6;">continuous learning</span> and a passion for building smarter systems.
         </p>      
         <div class="custom-button-container fade-in-on-scroll fade-in-up">
-          <a href="#projects" class="custom-button">
+          <a href="Ikrom Al Furqon CV.pdf" class="custom-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-down-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M6.364 2.5a.5.5 0 0 1 .5-.5H13.5A1.5 1.5 0 0 1 15 3.5v10a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 2 13.5V6.864a.5.5 0 1 1 1 0V13.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5H6.864a.5.5 0 0 1-.5-.5"/>
               <path fill-rule="evenodd" d="M11 10.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L1.146 1.854a.5.5 0 1 1 .708-.708L10 9.293V5.5a.5.5 0 0 1 1 0z"/>
             </svg>
             Download CV
           </a>
-          <a href="#contact" class="custom-button-outline">
+          <a href="http://www.linkedin.com/in/ikromalfurqon" class="custom-button-outline">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
             </svg>
@@ -218,35 +219,35 @@
     <div class="projects-card-container">
       <div class="projects-card fade-in-on-scroll fade-in-left">
         <img src="assets/img/project1.png" alt="Project 1">
-        <h3>Loan Application Dashboard</h3>
+        <h4>Loan Application Dashboard</h4>
       </div>
       <div class="projects-card fade-in-on-scroll fade-in-left">
         <img src="assets/img/project2.png" alt="Project 2">
-        <h3>Parsial Revenue Dashboard</h3>
+        <h4>Parsial Revenue Dashboard</h4>
       </div>
       <div class="projects-card fade-in-on-scroll fade-in-left">
         <img src="assets/img/project3.png" alt="Project 3">
-        <h3>Cash Console Dashboard</h3>
+        <h4>Cash Console Dashboard</h4>
       </div>
       <div class="projects-card fade-in-on-scroll fade-in-left">
         <img src="assets/img/project4.png" alt="Project 3">
-        <h3>Students Report Dashboard</h3>
+        <h4>Students Report Dashboard</h4>
       </div>
       <div class="projects-card fade-in-on-scroll fade-in-left">
         <img src="assets/img/project5.png" alt="Project 3">
-        <h3>AP Aging Dashboard</h3>
+        <h4>AP Aging Dashboard</h4>
       </div>
       <div class="projects-card fade-in-on-scroll fade-in-left">
         <img src="assets/img/project7.png" alt="Project 3">
-        <h3>Automatic Bank Reconciliation</h3>
+        <h4>Automatic Bank Reconciliation</h4>
       </div>
       <div class="projects-card fade-in-on-scroll fade-in-left">
         <img src="assets/img/project8.png" alt="Project 3">
-        <h3>Web Portfolio</h3>
+        <h4>Web Portfolio</h4>
       </div>
     </div>    
   </section>
-  <footer>
+  <footer id="contact">
     <div class="waves">
       <div class="wave" id="wave1"></div>
       <div class="wave" id="wave2"></div>
@@ -268,12 +269,19 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="modal-header">
-        <h3>Bachelor's Degree, Mathematics</h3>
-        <p><strong>UIN Syarif Hidayatullah Jakarta</strong></p>
-        <p style="color: #4B5563;">Aug 2019 - May 2023</p>
+        <div class="modal-header-img">
+          <img src="assets/icon/UIN.png" alt="">
+        </div>
+        <div class="modal-header-description">
+          <h3>Bachelor's Degree, Mathematics</h3>
+          <p><strong>UIN Syarif Hidayatullah Jakarta</strong></p>
+          <p style="color: #4B5563;">Aug 2019 - May 2023</p>
+        </div>
       </div>
-      <div class="modal-header">
-        <p class="section-title">Activities and Achievements</p>
+      <div class="modal-body">
+        <p>As a Mathematics major, I explore both the theoretical foundations and practical applications of mathematics. This includes areas such as algebra, calculus, statistics, and mathematical logic, as well as more advanced topics like abstract algebra, real analysis, and topology. Through problem-solving, rigorous proof writing, and analytical thinking, I develop a deep understanding of mathematical structures and their relevance across science, technology, and data-driven fields.</p>
+        <p>In addition to pure mathematics, I also study foundational computer science topics such as programming, algorithms, and the basics of machine learning. These courses allow me to apply mathematical concepts to computational problems, build logical systems, and explore how data-driven models can solve real-world challenges. This combination strengthens my ability to work at the intersection of mathematics, technology, and innovation.</p>
+        <p style="text-indent: 0;"><strong>Activities and Achievements:</strong></p>
         <ul>
           <li><p>Head of Research and Development department at HIMATIKA UIN Jakarta</p></li>
           <li><p>Lecturer Assistant for Abstract Algebra subject</p></li>
@@ -289,16 +297,17 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="modal-header">
-        <h3>Finance Officer</h3>
-        <p><strong>ARTOTEL Group</strong></p>
-        <p style="color: #4B5563;">Mar 2023 - Present</p>
+        <div class="modal-header-img">
+          <img src="assets/icon/artotel-logo-circle.png" alt="">
+        </div>
+        <div class="modal-header-description">
+          <h3>Finance Officer</h3>
+          <p><strong>ARTOTEL Group</strong></p>
+          <p style="color: #4B5563;">Mar 2023 - Present</p>
+        </div>
       </div>
-      <div class="modal-header">
-        <p>
-          I play a key role in managing and analyzing Accounts Receivable (AR) and Accounts Payable (AP) data to support operational efficiency and optimize cash flow. 
-          My work focuses on process automation, financial data management, and building reporting systems to enhance 
-          business decision-making.
-        </p>
+      <div class="modal-body">
+        <p>I play a key role in managing and analyzing Accounts Receivable (AR) and Accounts Payable (AP) data to support operational efficiency and optimize cash flow. My work focuses on process automation, financial data management, and building reporting systems to enhance business decision-making.</p>
         <ul>
           <li><p>Enhanced financial efficiency by tracking receivables, monitoring outstanding balances, reconciling AR/AP transactions, and streamlining vendor payments through data-driven insights.</p></li>
           <li><p>Developed a full Python automation script to perform reconciliation between bank statements, room sales, and settlement data across 87 active hotels in Indonesia. The script intelligently extracts payment data from email bodies—including Excel attachments for specific customer types—and consolidates multiple data sources to automate AR/AP processes with minimal manual effort.</p></li>
@@ -306,7 +315,7 @@
           <li><p>Built a web-based financial reporting system that allows hotel unit PICs to submit monthly reports efficiently, enabling stakeholders at the holding and subsidiary levels to access real-time financial summaries and performance metrics.</p></li>
           <li><p>Designed advanced Excel dashboards and templates for financial data management—including AP aging analysis, AR tracking, bank reconciliations, and invoice verification—improving overall accuracy and process visibility.</p></li>
         </ul>
-        <p>🛠 Tools & Technologies: Excel (PivotTables, Dashboards), Python (Pandas, openpyxl, smtplib), SQL, Looker Data Studio, Laravel, Jurnal by Mekari</p>
+        <p style="text-indent: 0;">🛠 Tools & Technologies: Excel (PivotTables, Dashboards), Python (Pandas, openpyxl, smtplib), SQL, Looker Data Studio, Laravel, Jurnal by Mekari</p>
       </div>
     </div>
   </div>
@@ -314,18 +323,23 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="modal-header">
-        <h3>Full-stack Web Developer</h3>
-        <p><strong>Freelance</strong></p>
-        <p style="color: #4B5563;">Aug 2024 - Present</p>
+        <div class="modal-header-img">
+          <img src="assets/icon/lance.png" alt="">
+        </div>
+        <div class="moda-header-description">
+          <h3>Full-stack Web Developer</h3>
+          <p><strong>Freelance</strong></p>
+          <p style="color: #4B5563;">Aug 2024 - Present</p>
+        </div>
       </div>
-      <div class="modal-header">
+      <div class="modal-body">
         <p>I specialize in crafting dynamic, responsive, and user-friendly websites that help businesses enhance their digital presence. With a strong focus on performance optimization and seamless user experience, I develop tailored web solutions that drive engagement and conversions.</p>
         <ul>
           <li><p>E-Commerce Development – Built intuitive and high-performing online stores with seamless navigation, ensuring smooth transactions and an optimized shopping experience.</p></li>
           <li><p>Company Profile & Landing Pages – Designed professional, responsive, and visually appealing landing pages that effectively showcase a brand’s identity, services, and value proposition.</p></li>
           <li><p>Client-Centric Solutions – Collaborated with clients to understand their needs, delivering custom-built web applications that align with business goals.</p></li>
         </ul>
-        <p>🛠 Tech Stack & Tools: PHP, JavaScript, Laravel, SQL, Bootstrap, Jquery</p>
+        <p style="text-indent: 0;">🛠 Tech Stack & Tools: PHP, JavaScript, Laravel, SQL, Bootstrap, Jquery</p>
       </div>
     </div>
   </div>

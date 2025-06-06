@@ -74,3 +74,8 @@ const observer = new IntersectionObserver(
 document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
   observer.observe(el);
 });
+
+function toggleNavbar() {
+  const menu = document.querySelector('.navbar-button-container');
+  menu.classList.toggle('show');
+}
